@@ -1,0 +1,71 @@
+﻿@charsert "UTF-8";
+
+ul#foto-ministerios {
+	
+width: 200px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+
+	
+ul#foto-ministerios li {
+	
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	border: 5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 1px 3px rgba(0,0,0,.4);
+	-webkit-transition: all .4s ease-in; /*tempo de transição das fotos*/
+}
+ul#foto-ministerios li span {/*legendas da fotos*/
+	opacity: 0;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 9pt;
+	line-height: 270px;
+	padding: 5px;	
+}
+ul#foto-ministerios li:hover {/*efeito da imagem ficar grande*/
+	-webkit-transform: scale(1.7);
+} 
+ul#foto-ministerios li:hover span {/*efeito de aparecer a legenda*/
+	opacity: 1;
+}
+/*colocando fotos*/
+ul#foto-ministerios li#foto1 {
+	background: url('../_imagens/galeria-01.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 10px 10px;
+	background-color: #ffffff;	
+}
+ul#foto-ministerios li#foto1:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#foto-ministerios li#foto2 {
+	background: url('../_imagens/galeria-02.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#foto-ministerios li#foto2:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#foto-ministerios li#foto3 {
+	background: url('../_imagens/galeria-03.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#foto-ministerios li#foto3:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
